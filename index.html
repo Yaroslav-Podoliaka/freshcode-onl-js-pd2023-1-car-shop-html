@@ -1,69 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=git st, initial-scale=1.0">
-  <title>Car Shop</title>
-  <style>
-    table, tr, th, td {
-      border: 2px solid;
-    }
-  </style>
-</head>
-<body>
-  <h1>Table</h1>
-  <table>
-    <caption>Shedule</caption>
-    <thead>
-      <tr>
-        <th rowspan="2">Country</th>
-        <th rowspan="2">Capital</th>
-        <th colspan="2">Info</th>
-        <th rowspan="2">Notice</th>
-      </tr>
-      <tr>
-        <th>Population</th>
-        <th>Square km2</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th>Britain</th>
-        <th>London</th>
-        <th>8 961 989 *</th>
-        <th>1602</th>
-        <th>* 2020</th>
-      </tr>
-      <tr>
-        <th>Washington</th>
-        <th>689 545 *</th>
-        <th>177</th>
-        <th>* 2020</th>
-        <th></th>
-      </tr>
-      <tr>
-        <th rowspan="2">Netherlands</th>
-        <th>Amsterdam</th>
-        <th>872 757 *</th>
-        <th>243</th>
-        <th>* 2019</th>
-      </tr>
-      <tr>
-        <th>Haag</th>
-        <th>515 800 *</th>
-        <th>98.2</th>
-        <th>* 2015</th>
-      </tr>
-      <tr>
-        <th>Ukraine</th>
-        <th>Kiev</th>
-        <th>2 950 702 *</th>
-        <th>847.66</th>
-        <th>* 2022</th>
-      </tr>
-    </tbody>
-    <tfoot></tfoot>
-  </table>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=git st, initial-scale=1.0" />
+    <title>Car Shop</title>
+    <style>
+      table,
+      tr,
+      th,
+      td {
+        border: 2px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form example</h1>
+    <form>
+      <fieldset>
+        <legend>Private info</legend>
+        <div>
+          <label for="name">Name</label>
+          <input autofocus id="name" placeholder="enter Name" />
+        </div>
+        <div>
+          <label for="lastname">LastName</label>
+          <input id="lastname" placeholder="enter LastName" />
+        </div>
+        <div>
+          <label for="DateofBirth">Date of Birth</label>
+          <input type="datetime-local" />
+        </div>
+        <div>
+          <label for="email">Male</label>
+          <input type="radio" value="male" name="gender" id="male" />
+        </div>
+        <div>
+          <label for="feemail">Female</label>
+          <input type="radio" value="female" name="gender" id="feemail" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Address</legend>
+        <div>
+          <label for="city">City</label>
+          <select>
+            <option value="Zaporizhzha" selected>Zaporizhzha</option>
+            <option value="Dnipro">Dnipro</option>
+            <option value="Poltava">Poltava</option>
+          </select>
+        </div>
+        <div>
+          <label for="street">Street</label>
+          <input type="street" />
+        </div>
+        <div>
+          <label for="House">House number</label>
+          <input type="House" />
+        </div>
+        <div>
+          <label for="apartment">Apartment</label>
+          <input type="apartment" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Contact details</legend>
+        <div>
+          <label for="mobile">Mobile phone</label>
+          <input type="mobile" />
+        </div>
+        <div>
+          <label for="work phone">Work phone</label>
+          <input type="work phone" />
+        </div>
+        <div>
+          <label for="home phone">Home phone</label>
+          <input type="home phone" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" />
+        </div>
+      </fieldset>
+      <input type="reset" value="Cancel" />
+      <input type="submit" value="Ok" />
+    </form>
+  </body>
 </html>
