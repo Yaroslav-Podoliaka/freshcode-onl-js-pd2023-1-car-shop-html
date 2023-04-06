@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order form</title>
+</head>
+<body>
+  <h1>Форма для заказа</h1>
+    <form>
+      <fieldset>
+        <legend>Данные покупателя</legend>
+        <div>
+          <label for="name">Имя</label>
+          <input autofocus id="name" placeholder="введите имя" />
+        </div>
+        <div>
+          <label for="lastname">Фамилия</label>
+          <input id="lastname" placeholder="введите фамилию" />
+        </div>
+        <div>
+          <label for="DateofBirth">Дата рождения</label>
+          <input type="datetime-local" />
+        </div>
+        <div>
+          <label for="gender">Пол</label>
+        </div>
+        <div>
+          <label for="man">Мужской</label>
+          <input type="radio" value="man" name="gender" id="man" />
+          <label for="woman">Женский</label>
+          <input type="radio" value="woman" name="gender" id="woman" />
+        </div>
+        <div>
+          <label for="Drive experience">Опыт вождения</label>
+          <select>
+            <option value="">---</option>
+            <option value="upto1year">до 1 года</option>
+            <option value="1to3years">от 1 до 3 лет</option>
+            <option value="over3years">более 3 лет</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Контактная информация</legend>
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" />
+        </div>
+        <div>
+          <label for="tel">Телефон</label>
+          <input type="tel" />
+        </div>
+        <div>
+          <label for="address">Адрес</label>
+          <input type="text" name="" id="address" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Информация о автомобиле</legend>
+        <div>
+          <label for="brand">Марка</label>
+          <select>
+            <option value="">---</option>
+            <option value="BMW">BMW</option>
+            <option value="Ford">Ford</option>
+            <option value="Toyota">Toyota</option>
+          </select>
+        </div>
+        <div>
+          <label for="model">Модель</label>
+          <select>
+            <option value="">---</option>
+            <option value="BMW i4">BMW i4</option>
+            <option value="BMW X5">BMW X5</option>
+            <option value="Ford Fiesta">Ford Fiesta</option>
+            <option value="Ford Mondeo">Ford Mondeo</option>
+            <option value="Toyota Camry">Toyota Camry</option>
+            <option value="Toyota RAV4">Toyota RAV4</option>
+          </select>
+        </div>
+        <div>
+          <label for="used">Бывший в употреблении</label>
+          <input type="checkbox" name="" id="used" />
+        </div>
+        <div>
+          <label for="color">Цвет</label>
+        </div>
+        <div>
+          <label for="red">Красный</label>
+          <input type="radio" value="red" name="color" id="red" />
+          <label for="black">Черный</label>
+          <input type="radio" value="black" name="color" id="black" />
+          <label for="blue">Синий</label>
+          <input type="radio" value="blue" name="color" id="blue" />
+          <label for="white">Белый</label>
+          <input type="radio" value="white" name="color" id="white" />
+          <label for="grey">Металик</label>
+          <input type="radio" value="grey" name="color" id="grey" />
+        </div>
+        <div>
+          <label for="price">Цена</label>
+          <input type="range" name="" id="price" />
+        </div>
+      </fieldset>
+      <input type="reset" value="Cancel" />
+      <input type="submit" value="Ok" />
+    </form>
+</body>
+</html>
