@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=git st, initial-scale=1.0" />
+    <title>Car Shop</title>
+    <style>
+      table,
+      tr,
+      th,
+      td {
+        border: 2px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form example</h1>
+    <form>
+      <fieldset>
+        <legend>Private info</legend>
+        <div>
+          <label for="name">Name</label>
+          <input autofocus id="name" placeholder="enter Name" />
+        </div>
+        <div>
+          <label for="lastname">LastName</label>
+          <input id="lastname" placeholder="enter LastName" />
+        </div>
+        <div>
+          <label for="Date-of-Birth">Date of Birth</label>
+          <input type="datetime-local" id="Date-of-Birth" />
+        </div>
+        <div>
+          <label for="maile">Male</label>
+          <input type="radio" value="maile" name="gender" id="maile" />
+        </div>
+        <div>
+          <label for="femaile">Female</label>
+          <input type="radio" value="femaile" name="gender" id="femaile" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Address</legend>
+        <div>
+          <label for="city">City</label>
+          <select id="city">
+            <option value="Zaporizhzha" selected>Zaporizhzha</option>
+            <option value="Dnipro">Dnipro</option>
+            <option value="Poltava">Poltava</option>
+          </select>
+        </div>
+        <div>
+          <label for="street">Street</label>
+          <input type="text" id="street" />
+        </div>
+        <div>
+          <label for="house">House number</label>
+          <input type="text" id="house" />
+        </div>
+        <div>
+          <label for="apartment">Apartment</label>
+          <input type="text" id="apartment" />
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Contact details</legend>
+        <div>
+          <label for="mobile">Mobile phone</label>
+          <input type="tel" name="mobile" id="mobile" />
+        </div>
+        <div>
+          <label for="work-phone">Work phone</label>
+          <input type="tel" name="work-phone" id="work-phone" />
+        </div>
+        <div>
+          <label for="home-phone">Home phone</label>
+          <input type="tel" name="home-phone" id="home-phone" />
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+        </div>
+      </fieldset>
+      <input type="reset" value="Cancel" />
+      <input type="submit" value="Ok" />
+    </form>
+  </body>
+</html>
