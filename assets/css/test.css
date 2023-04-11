@@ -1,0 +1,82 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  font-size: 25px;
+  --main-bg-color: gray;
+  --col-numbers: 4;
+}
+
+.width1 {
+  border: 2px dashed blue;
+  width: 350px;
+}
+.width2 {
+  border: 3px solid red;
+  width: 40vmax;
+}
+.width3 {
+  border: 3px solid green;
+  width: 40%;
+}
+div {
+  margin: 10px;
+}
+.l1, .l2, .l3 {
+  border: 3px solid green;
+  margin: 10px;
+  padding: 10px;
+  font-size: 1.3em;
+  
+}
+.l1 {
+
+}
+.l3 {
+  background-color: var(gray);
+}
+#lev1 {
+  border: 3px solid magenta;
+}
+/* [class|=in] {
+  background-color: blueviolet;
+} */
+div p {
+  border: aqua;
+}
+p+section {
+  color: blanchedalmond;
+}
+.bl1, .bl2, .bl3, .bl4, .bl5, .bl6 {
+  width: calc(100%/var(--col-numbers));
+  border: 2px solid red;
+  padding: 10px 20px 30px 40px;
+  /* margin: 50px; */
+  
+  display: inline-block;
+}
+.bl1 {
+  margin-bottom: 100px;
+  --main-bg-color: gray;
+    background-color: var(--main-bg-color);
+  /* display: contents;
+  visibility: hidden; */
+}
+.bl2 {
+  background-color: rgb(0, 128, 128, .5);
+}
+.wrapper {
+  border: 2px solid gray;
+  width: 900px;
+}
+.wrapper>div:nth-child(3n) {
+  background-color: aqua;
+}
+.in-wrepper {
+  border: 2px solid blue;
+  font-size: 0px;
+  
+}
+span {
+  border: 1px solid magenta;
+}

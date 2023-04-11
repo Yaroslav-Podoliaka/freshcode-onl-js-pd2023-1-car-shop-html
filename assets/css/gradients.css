@@ -1,0 +1,20 @@
+.container {
+  /* margin: 0 auto; */
+}
+.container>div {
+  /* width: 70%; */
+  max-width: 70%;
+  min-width: 200px;
+  height: 200px;
+  border: 2px solid blue;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 50px;
+  margin: 0 auto;
+}
+#gradient1 {
+  background: linear-gradient(to left, teal, cyan);
+}
+#gradient2 {
+  background: linear-gradient(-45deg, yellow, magenta);
+}
