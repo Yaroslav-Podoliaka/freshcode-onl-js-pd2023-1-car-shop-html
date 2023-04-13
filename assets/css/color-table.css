@@ -1,0 +1,39 @@
+table {
+  margin: auto;
+  border: 3px solid red;
+  text-align: center;
+  font-size: 1.3em;
+}
+tr, th, td {
+  border: 2px solid blue;
+}
+th {
+  width: 150px;
+}
+tr>th:first-child {
+  width: 50px;
+}
+h1{
+  text-align: center;
+  color: red;
+  margin: 2px;
+}
+h1::after {
+  content: "#05";
+  color: blueviolet;
+}
+tbody>tr:nth-child(odd) {
+  background-color: olivedrab;
+  }
+  tbody>tr:nth-child(even) {
+    background-color: darkgrey;
+  }
+thead {
+  background-color: lightpink;
+}
+tbody>tr>td:first-child {
+  background-color: aqua;
+}
+tfoot>tr>td {
+  background-color: coral;
+}
