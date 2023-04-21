@@ -1,0 +1,49 @@
+* {
+  margin: auto;
+}
+
+section {
+  border: 2px solid red;
+  width: 1200px;
+}
+
+h1::first-letter {
+  font-size: 50px;
+  color: red;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  text-transform: uppercase;
+  text-decoration: underline dashed;
+}
+
+p::first-line {
+  font-size: 20px;
+  color: blue;
+}
+
+p::selection {
+  background-color: aquamarine;
+}
+
+h2::before {
+  content: "\2618";
+}
+
+p {
+  font-style: italic;
+  font-weight: lighter;
+  color: green;
+  text-indent: 3em;
+  word-spacing: 2em;
+  line-height: 1.8em;
+}
+
+  {
+  margin: auto;
+}

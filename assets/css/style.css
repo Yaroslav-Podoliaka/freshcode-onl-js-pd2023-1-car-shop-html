@@ -1,40 +1,75 @@
 * {
-  margin: auto;
+  box-sizing: border-box;
 }
-section{
-  border: 2px solid red;
-  width: 1200px;
-}
-h1::first-letter {
-  font-size: 50px;
-  color: red;
-  
-}
-h1{
+ul {
+  display: flex;
+  background-color: aqua;
+  font-size: 14px;
   text-align: center;
 }
-h2{
-  text-transform: uppercase;
-  text-decoration: underline dashed;
+h1 {
+  text-align: center;
+  margin-top: 30px;
 }
-p::first-line {
-  font-size: 20px;
+section {
+  padding: 10px;
+}
+.container {
+  display: flex;
+  min-width: 75%;
+  max-width: 100%;
+  margin: 20px;
+}
+.container-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+table {
+  border: 2px solid red;
+  margin: 30px auto;
+}
+tr, th, td {
+  border: 2px solid blueviolet;
+  text-align: center;
+}
+th {
+  width: 120px;
+}
+tr>th:first-child {
+  width: 100px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  /* text-transform: uppercase; */
+}
+
+footer{
+  display: flex;
+  background-color: teal;
+  color: white;
+  justify-content: center;
+  align-items: baseline;
+}
+h3 {
+  text-align: center;
+}
+h1::first-letter {
+  color: red;
+}
+section>p::first-line {
   color: blue;
 }
-p::selection {
-  background-color: aquamarine;
+p>a {
+  color: white;
 }
-h2::before {
+/* h2::before {
   content: "\2618";
-}
+} */
 p {
-  font-style: italic;
-  font-weight: lighter;
-  color: green;
+  /* font-weight: lighter; */
   text-indent: 3em;
-  word-spacing: 2em;
-  line-height: 1.8em;
-}
-{
-  margin: auto;
+  /* line-height: 1.8em; */
 }
