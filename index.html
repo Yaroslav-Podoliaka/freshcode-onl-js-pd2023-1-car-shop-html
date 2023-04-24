@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <div class="logo">
+      <div>
         <img
           src="http://auto.un.net.ua/_uploaded_files/salon/salon_1380802931-240.jpg"
           alt="Автотрейдинг-Центр"
@@ -17,35 +17,42 @@
       </div>
       <nav>
         <ul>
-          <li><a href="#ford-story">История компании Ford</a></li>
+          <li><a href="#ford-logo">Ford</a></li>
+          <!-- <li><a href="#ford-story">История компании Ford</a></li>
           <li><a href="#ford-mondeo">Ford Mondeo</a></li>
-          <li><a href="#ford-fiesta">Ford Fiesta</a></li>
-          <li><a href="#toyota-story">История компании Toyota</a></li>
+          <li><a href="#ford-fiesta">Ford Fiesta</a></li> -->
+          <li><a href="#toyota-logo">Toyota</a></li>
+          <!-- <li><a href="#toyota-story">История компании Toyota</a></li>
           <li><a href="#toyota-rav4">Toyota RAV4</a></li>
-          <li><a href="#toyota-camry">Toyota Camry</a></li>
-          <li><a href="#bmw-story">История компании BMW</a></li>
+          <li><a href="#toyota-camry">Toyota Camry</a></li> -->
+          <li><a href="#bmw-logo">BMW</a></li>
+          <!-- <li><a href="#bmw-story">История компании BMW</a></li>
           <li><a href="#bmw-x5">BMW X5</a></li>
-          <li><a href="#bmw-i4">BMW i4</a></li>
-          <li><a href="#summary-of-models">Сводная информация о моделях</a></li>
+          <li><a href="#bmw-i4">BMW i4</a></li> -->
+          <li><a href="#summary-of-models">Информация о моделях</a></li>
           <li><a href="./orderform.html">Форма для заказа</a></li>
           <li><a href="./test.html">Test</a></li>
           <li><a href="./color-table.html">Color-table</a></li>
           <li><a href="./gradients.html">Gradients</a></li>
           <li><a href="./flexbox.html">Flexbox</a></li>
+          <li><a href="./position-second.html">Position second</a></li>
+          <li><a href="./position-sticky.html">Position sticky</a></li>
+          <li><a href="./adaptive.html">Adaptive</a></li>
+          <li><a href="./card.html">Card</a></li>
+          <li><a href="./columns.html">Columns</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <h1>Автомагазин - Автотрейдинг-Центр</h1>
       <article>
-        <div class="container-logo">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/200px-Ford_logo_flat.svg.png"
-            alt="Ford logo"
+        <div class="car-logo" id="ford-logo">
+          <img class="car-logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/200px-Ford_logo_flat.svg.png" alt="Ford logo"
           />
         </div>
         <div class="container">
-        <section id="ford-story">
+          <section id="ford-story">
             <h2>История компании Ford</h2>
             <p>
               Компания основана в Детройте в 1903 году Генри Фордом, который
@@ -150,8 +157,8 @@
               автопилотирования. Общая сумма вложений составила 2,6 млрд
               долларов[20].
             </p>
-        </section>
-        <section id="ford-mondeo">
+          </section>
+          <section id="ford-mondeo">
             <h2>Ford Mondeo</h2>
             <p>
               Ford Mondeo четвёртого поколения появился в 2007 году и
@@ -241,8 +248,8 @@
               В 2010 году комплектации Ghia X и Titanium X заменили комплектации
               Titanium Black и Titanium Sport.
             </p>
-        </section>
-        <section id="ford-fiesta">
+          </section>
+          <section id="ford-fiesta">
             <h2>Ford Fiesta</h2>
             <p>
               Ford Fiesta Mark VI или шестое поколение было показано как
@@ -265,15 +272,15 @@
               2013 модельного года производится в России на заводе Ford Sollers
               в Набережных Челнах[23], но он не производился в Европе.
             </p>
-        </section>
+          </section>
         </div>
       </article>
       <article>
-        <div class="container-logo">
-          <img src="./assets/images/logoToyota.png" alt="Toyota logo" />
+        <div class="car-logo" id="toyota-logo">
+          <img class="car-logo" src="./assets/images/logoToyota.png" alt="Toyota logo" />
         </div>
         <div class="container">
-        <section id="toyota-story">
+          <section id="toyota-story">
             <h2>История компании Toyota</h2>
             <p>
               В 1924 году Сакити Тоёда изобрел автоматический ткацкий станок
@@ -327,8 +334,8 @@
               являлись самыми продаваемыми. Так, в 1992 году на долю Тойоты
               приходилось 40 % машин, принадлежавших населению[8].
             </p>
-        </section>
-        <section id="toyota-rav4">
+          </section>
+          <section id="toyota-rav4">
             <h2>Toyota RAV4</h2>
             <p>
               Toyota RAV4 - внедорожник класса «K1» с передним или полным
@@ -359,8 +366,8 @@
               И пусть он немного слабее старого 2,2-литрового двигателя, зато
               потребляет меньше топлива и бережней относится к окружающей среде.
             </p>
-        </section>
-        <section id="toyota-camry">
+          </section>
+          <section id="toyota-camry">
             <h2>Toyota Camry</h2>
             <p>
               Toyota Camry (Тойота Камри) – переднеприводный седан класса «D».
@@ -418,18 +425,17 @@
               разогнать машину до первой сотни аж за целых 9.7 сек. с
               максимальной скоростью в 210 км/ч.
             </p>
-        </section>
+          </section>
         </div>
       </article>
       <article>
-        <div class="container-logo">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/180px-BMW_logo_%28gray%29.svg.png"
-            alt="BMW logo"
+        <div class="car-logo" id="bmw-logo">
+          <img class="car-logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/180px-BMW_logo_%28gray%29.svg.png" alt="BMW logo"
           />
         </div>
         <div class="container">
-        <section id="bmw-story">
+          <section id="bmw-story">
             <h2>История компании BMW</h2>
             <p>
               Компания ведёт свою историю с 1913 года, когда Карлом Фридрихом
@@ -562,8 +568,8 @@
               Там же в июне 2022 года был открыт третий завод, который
               производит электромобили[21].
             </p>
-        </section>
-        <section id="bmw-x5">
+          </section>
+          <section id="bmw-x5">
             <h2>BMW X5</h2>
             <p>
               BMW X5 – задне- либо полноприводный кроссовер класса «К3».
@@ -632,8 +638,8 @@
               Bowers&Wilkins мощностью 1500 Вт с 20-ю динамиками, а также
               расширенным рядом электронных систем безопасности.
             </p>
-        </section>
-        <section id="bmw-i4">
+          </section>
+          <section id="bmw-i4">
             <h2>BMW i4</h2>
             <p>
               BMW i4 – задне- или полноприводный электрический лифтбек класса
@@ -689,7 +695,7 @@
               изменяемым передаточным числом, более продвинутой тормозной
               системой и облегченными дисками (размером до 20 дюймов).
             </p>
-        </section>
+          </section>
         </div>
       </article>
       <article>
@@ -773,17 +779,23 @@
       </article>
     </main>
     <footer>
-      <address>ул. Здолбуновская, 3, г. Kиев Левый берег, Украина</address>
+      <address>
+        <ul>
+          <li>Украина</li>
+          <li>г. Kиев Левый берег</li>
+          <li>ул. Здолбуновская, 3</li>
+        </ul>
+      </address>
       <div>
         <h3>Контактная информация</h3>
         <p>Гарячая линия - 0800-340-420</p>
         <p>Отдел продаж - 044-390-38-11, 067-256-12-33, 066-256-12-33</p>
         <p>Запись на тест-драйв - 067-256-12-48</p>
-        <p>
-          <a href="email:avtotraeidingcentr@gmail.com"
-            >avtotraeidingcentr@gmail.com
-          </a>
-        </p>
+        <div>
+        <a href="email:avtotraeidingcentr@gmail.com"
+          >avtotraeidingcentr@gmail.com
+        </a>
+        </div>
       </div>
       <div>
         <p>Сайт разработал - Ярослав Подоляка</p>

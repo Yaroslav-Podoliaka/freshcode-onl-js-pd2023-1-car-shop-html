@@ -3,12 +3,15 @@
 }
 ul {
   display: flex;
+  min-height: 70px;
+  max-height: 100px;
   background-color: aqua;
   font-size: 14px;
-  text-align: center;
+  justify-content: space-between;
+  align-items: center;
 }
 h1 {
-  text-align: center;
+  /* text-align: center; */
   margin-top: 30px;
 }
 section {
@@ -20,10 +23,13 @@ section {
   max-width: 100%;
   margin: 20px;
 }
-.container-logo {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
+/* main {
+  text-align: center;
+} */
+.car-logo {
+  display: inline-block;
+  width: 200px;
+  height: 100px;
 }
 table {
   border: 2px solid red;
@@ -45,13 +51,24 @@ h2 {
   margin-top: 20px;
   /* text-transform: uppercase; */
 }
-
 footer{
   display: flex;
   background-color: teal;
   color: white;
   justify-content: center;
   align-items: baseline;
+}
+address>ul {
+  display: inline;
+  background-color: teal;
+}
+footer>div {
+  display: inline-block;
+  text-align: center;
+}
+footer>div>div>a {
+  color: white;
+
 }
 h3 {
   text-align: center;
@@ -62,9 +79,6 @@ h1::first-letter {
 section>p::first-line {
   color: blue;
 }
-p>a {
-  color: white;
-}
 /* h2::before {
   content: "\2618";
 } */
@@ -72,4 +86,42 @@ p {
   /* font-weight: lighter; */
   text-indent: 3em;
   /* line-height: 1.8em; */
+}
+h1 {
+  animation-name: header-h1;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes header-h1 {
+  from {
+    margin-left: 0%;
+  }
+  to {
+    margin-left: 100%;
+  }
+  50% {
+    margin-left: 50%;
+    font-size: 200%;
+    color: red;
+    transform: rotate(180deg);
+  }
+}
+.car-logo {
+  animation-name: car-logo;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes car-logo {
+  from {
+    width: 200px;
+    height: 100px;
+  }
+
+  to {
+    width: 400px;
+    height: 50px;
+    transform: rotate(270deg);
+  }
 }
